@@ -245,7 +245,6 @@ npm i prettier -D
 #### 5.3.1. npm 설치
 
 ```bash
-npm i  eslint-config-prettier -D
 npm i  eslint-plugin-prettier -D --force
 ```
 
