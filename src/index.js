@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+// css
+import "./index.css";
+import StartPage from "./pages/StartPage";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-    <App />
+  <div className="wrap">
+    <StartPage></StartPage>
+  </div>,
 );
