@@ -1,6 +1,23 @@
 .wrap {
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrap .notice {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ff0000;
+  width: 800px;
+  height: 400px;
+}
+.wrap a {
+  display: block;
+}
+.wrap a:hover {
+  background-color: red;
+}
+.wrap a span {
+  display: block;
 }/*# sourceMappingURL=test.css.map */
