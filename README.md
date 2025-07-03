@@ -580,3 +580,22 @@ function Header() {
 
 export default Header;
 ```
+
+# CSS-in-JS
+
+- Styled Commonent
+- Emotion
+
+## 1. 환경설정
+
+```bash
+npm i @emotion/react @emotion/style
+
+npm i @meotion/react
+npm i @meotion/styled
+```
+
+## 2. 왜 필요한가?
+
+- 태그처럼 생겼다. (내가 만든 태그)
+- 태그가 내용을 설명하도록 구성한다.
