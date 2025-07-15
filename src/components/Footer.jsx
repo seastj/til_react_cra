@@ -1,8 +1,12 @@
 import React from "react";
-// css
-import "../css/Footer.css";
-function Footer() {
-  return <div>Footer</div>;
+import { Link } from "react-router-dom";
+
+function Footer({ children }) {
+  return (
+    <footer>
+      <Link to="/">👍홈</Link>카피라이터{children}
+    </footer>
+  );
 }
 
 export default Footer;
