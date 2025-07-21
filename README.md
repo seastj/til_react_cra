@@ -208,3 +208,32 @@ function App() {
 
 export default App;
 ```
+
+# React.memo
+
+- 불필요한 리렌더링을 막아준다.
+- props 가 전달되면 리렌더링이 일어난다.
+- 이를 최적화함.
+
+## 1. 문제점
+
+- 리액트 변수, 즉, `useState 에 의해서 값이 변해서 리렌더링 됨`은 정상이다
+- 그러나 `리렌더링에서 제외되어야 하는 컴포넌트`를 설정할 필요성이 있다.
+
+## 2. 해결
+
+- React.memo 적용
+
+```jsx
+import React, { memo } from "react";
+
+function Child() {
+  // js
+  console.log("Child : 리렌더링");
+
+  // jsx
+  return <div>Child</div>;
+}
+
+export default memo(Child);
+```
