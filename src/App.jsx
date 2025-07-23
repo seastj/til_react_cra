@@ -1,18 +1,10 @@
-import React, { useState } from "react";
-import Child from "./Child";
+import Counter from "./components/counter/Counter";
 
 function App() {
-  console.log("App : 리렌더링");
-  // js
-  const [count, setCount] = useState(0);
-  const [text, setText] = useState("");
-
-  // jsx
   return (
     <div>
-      <h2>Count : {count}</h2>
-      <button onClick={() => setCount(count + 1)}>함수 실행</button>
-      <Child />
+      <h1>useReducer 예제</h1>
+      <Counter />
     </div>
   );
 }
